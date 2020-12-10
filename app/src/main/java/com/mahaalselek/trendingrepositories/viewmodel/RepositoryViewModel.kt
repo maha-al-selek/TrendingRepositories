@@ -1,5 +1,6 @@
 package com.mahaalselek.trendingrepositories.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.mahaalselek.trendingrepositories.repository.RepositoriesRepository
@@ -17,7 +18,7 @@ class RepositoryViewModel(val dataRepository: RepositoriesRepository) : ViewMode
             }
 
             override fun onFailure() {
-                //REQUEST FAILED
+                Log.d("Failed","Failed to get repository")
             }
         })
     }
