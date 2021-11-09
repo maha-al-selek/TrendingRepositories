@@ -26,8 +26,6 @@ class RepositoryListFragment : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        //Hello World
-
         val recyclerView = view?.findViewById<RecyclerView>(R.id.recyclerView)
         recyclerView!!.layoutManager = LinearLayoutManager(view!!.context, LinearLayoutManager.VERTICAL, false)
 
